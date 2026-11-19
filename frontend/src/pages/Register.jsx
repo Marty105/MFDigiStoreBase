@@ -13,6 +13,10 @@ const Register = () => {
       alert('Registration successful. Please log in.');
       navigate('/login');
     } catch (error) {
+            console.log('Status:', error.response?.status);
+      console.log('Data:', error.response?.data);
+      console.log('Message:', error.message);
+      console.log('Sent:', formData);
       alert('Registration failed. Please try again.');
     }
   };

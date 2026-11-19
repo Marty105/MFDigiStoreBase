@@ -12,11 +12,14 @@ const Navbar = () => {
 
   return (
     <nav className="bg-blue-600 text-white p-4 flex justify-between items-center">
-      <Link to="/" className="text-2xl font-bold">Task Manager</Link>
+      <Link to="/" className="text-2xl font-bold">DigiStore</Link>
       <div>
         {user ? (
           <>
-            <Link to="/tasks" className="mr-4">Tasks</Link>
+           
+           <Link to="/categories" className="mr-4">Categories</Link>     
+           <Link to="/search" className="mr-4">Search</Link> 
+            <Link to="/sell" className="mr-4">Sell</Link>
             <Link to="/profile" className="mr-4">Profile</Link>
             <button
               onClick={handleLogout}
